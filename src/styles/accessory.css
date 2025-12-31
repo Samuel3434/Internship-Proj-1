@@ -1,0 +1,36 @@
+.accessory {
+    position: fixed;
+    width: 126px;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(1, 12);
+    gap: 15px;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    overflow: visible;
+  }
+  
+  .bars {
+    height: 55px;
+    z-index: 1000;
+    background: linear-gradient(180deg, #81C784, #80DEEA, #BDBDBD);
+    border-radius: 0 1rem 1rem 0;
+    width: 96px; /* Default width */
+    transition: width 0.8s ease-in-out; /* Add transition to width */
+  }
+  
+  .invert {
+    height: calc();
+    right: 0;
+    transform: rotateY(180deg);
+    /* transform: translateZ(180dg);gcc */
+  }
+  .bars:nth-child(even){
+    transition-delay: 0.3s;
+  }
+
+  
+
+ 
